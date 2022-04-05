@@ -6,7 +6,7 @@
 /*   By: juzoanya <juzoanya@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:14:58 by juzoanya          #+#    #+#             */
-/*   Updated: 2022/03/04 19:41:52 by juzoanya         ###   ########.fr       */
+/*   Updated: 2022/04/05 11:11:09 by juzoanya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,14 @@ int	main(int argc, char **argv)
 {
 	int	pid;
 
-	if (argc < 3 || !argv[2])
-		return (0);
+	if (argc < 3)
+	{
+		write(1, "PID and String Arguments not Passed\n", 36);
+		return (1);
+	}
 	pid = ft_atoi(argv[1]);
 	sig_tx(argv[2], pid);
+	while (1)
+		pause();
 	return (0);
 }
