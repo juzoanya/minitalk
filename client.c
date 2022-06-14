@@ -6,7 +6,7 @@
 /*   By: juzoanya <juzoanya@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:14:58 by juzoanya          #+#    #+#             */
-/*   Updated: 2022/06/12 22:52:57 by juzoanya         ###   ########.fr       */
+/*   Updated: 2022/06/14 20:04:45 by juzoanya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	send_char(int id, char c)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(100000);
+		usleep(100);
 		i--;
 	}
 }
