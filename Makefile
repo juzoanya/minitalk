@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: juzoanya <juzoanya@student.42wolfsburg.de> +#+  +:+       +#+         #
+#    By: juzoanya <juzoanya@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 17:15:07 by juzoanya          #+#    #+#              #
-#    Updated: 2022/03/07 11:32:31 by juzoanya         ###   ########.fr        #
+#    Updated: 2022/06/12 22:51:42 by juzoanya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,10 +17,12 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC_S =	server.c \
-		minitalk_util.c \
+		utils.c \
+		helper.c \
 
 SRC_C = client.c \
-		minitalk_util.c \
+		utils.c \
+		helper.c \
 
 
 OBJ_S = $(SRC_S:.c=.o)
