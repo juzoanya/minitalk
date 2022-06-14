@@ -6,7 +6,7 @@
 echo -e "\n\033[1;34m========= MINITALK TESTER =========\033[0m\n"
 
 # Correct paths if needed
-minitalk_path="/home/admin/minitalk"
+minitalk_path="/home/admin/minitalk/"
 
 results_path=results/
 client_file=results/client.out.txt
